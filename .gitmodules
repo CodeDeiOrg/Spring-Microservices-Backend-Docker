@@ -1,0 +1,3 @@
+[submodule "docker/prometheus/config-server"]
+	path = docker/prometheus/config-server
+	url = https://github.com/CodeDeiOrg/Spring-Microservices-in-Action-Config-Server

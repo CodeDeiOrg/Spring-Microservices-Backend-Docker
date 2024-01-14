@@ -1,0 +1,22 @@
+global:
+  scrape_interval: 5s
+  evaluation_interval: 5s
+scrape_configs:
+  - job_name: 'book-service'
+    metrics_path: '/prometheus'
+    scheme: http
+#    tls_config:
+#      insecure_skip_verify: true
+    # cert_file: /etc/prometheus/prometheus-cert.pem
+    # key_file: /etc/prometheus/prometheus-key.pem
+    static_configs:
+      - targets: [ 'book-service:8180' ]
+  - job_name: 'administration-service'
+    metrics_path: '/prometheus'
+    scheme: http
+#    tls_config:
+#      insecure_skip_verify: true
+    # cert_file: /etc/prometheus/prometheus-cert.pem
+    # key_file: /etc/prometheus/prometheus-key.pem
+    static_configs:
+      - targets: [ 'administration-service:8081' ]
