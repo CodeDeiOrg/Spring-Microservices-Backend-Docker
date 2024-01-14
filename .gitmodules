@@ -1,3 +1,15 @@
-[submodule "docker/prometheus/config-server"]
-	path = docker/prometheus/config-server
+[submodule "config-server"]
+	path = config-server
 	url = https://github.com/CodeDeiOrg/Spring-Microservices-in-Action-Config-Server
+[submodule "gateway-server"]
+	path = gateway-server
+	url = https://github.com/CodeDeiOrg/Spring-Microservices-in-Action-Gateway-Server
+[submodule "eureka-server"]
+	path = eureka-server
+	url = https://github.com/CodeDeiOrg/Spring-Microservices-in-Action-Eureka-Server
+[submodule "book-service"]
+	path = book-service
+	url = https://github.com/CodeDeiOrg/Spring-Microservices-in-Action-Book-Service
+[submodule "administration-service"]
+	path = administration-service
+	url = https://github.com/CodeDeiOrg/Spring-Microservices-in-Action-Administration-Service
